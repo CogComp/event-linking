@@ -2,26 +2,6 @@ Here is the repo of our paper: [Event Linking: Grounding Event Mentions to Wikip
 
 EveLINK is built based on the code of [BLINK](https://github.com/facebookresearch/BLINK). When using our code, please give enough credits to [BLINK](https://github.com/facebookresearch/BLINK).
 
-[//]: # (The details of data and models are described in the following paper:)
-
-[//]: # ()
-[//]: # (```bibtex)
-
-[//]: # (@inproceedings{wu2019zero,)
-
-[//]: # ( title={Zero-shot Entity Linking with Dense Entity Retrieval},)
-
-[//]: # ( author={Ledell Wu, Fabio Petroni, Martin Josifoski, Sebastian Riedel, Luke Zettlemoyer},)
-
-[//]: # ( booktitle={EMNLP},)
-
-[//]: # ( year={2020})
-
-[//]: # (})
-
-[//]: # (```)
-
-
 ## Create environment
 
 ```
