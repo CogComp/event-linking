@@ -1,6 +1,6 @@
 Here is the repo of our paper: [Event Linking: Grounding Event Mentions to Wikipedia](http://cogcomp.org/page/publication_view/996)
 
-EveLINK is built based on the code of [BLINK](https://github.com/facebookresearch/BLINK). When using our code, please give enough credits to [BLINK].
+EveLINK is built based on the code of [BLINK](https://github.com/facebookresearch/BLINK). When using our code, please give enough credits to [BLINK](https://github.com/facebookresearch/BLINK).
 
 [//]: # (The details of data and models are described in the following paper:)
 
@@ -26,7 +26,7 @@ EveLINK is built based on the code of [BLINK](https://github.com/facebookresearc
 
 ```
 conda create -n evelink python=3.8
-conda activate blink37
+conda activate evelink
 pip install -r requirements.txt
 ``` 
 You may need to change torch version based on your CUDA version.
