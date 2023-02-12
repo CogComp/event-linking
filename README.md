@@ -15,6 +15,52 @@ You may need to change torch version based on your CUDA version.
 
 You can download the data and the model [here].
 
+### Wikipedia data
+Wikipedia domain data is in ``wikipedia`` folder.
+ 
+``raw`` is the raw data without predicted entities. 
+``preprocessed`` is the data with predicted entities in the context. 
+The data format in ``raw`` and ``preprocessed`` is:
+
+    { "Correct Wikipedia title": 
+        { "page": the page of the event mention
+          "start": the start character index of the event mention
+          "end": the end character index of the event mention
+          "type": verb or other (nominal)
+          "status": hard cases or easy cases
+          "entities": predicted entities in local context
+        }
+    }
+
+
+
+``wiki`` is the simplified Wikipedia dumps. 
+``title_text.json`` is the dictionary of all the Wikipedia titles' page text. 
+``t2hyperlinks.json`` is the dictionary of hyperlinks in all the Wikipedia titles. 
+``enwiki-20200301.id2t.pkl`` is the mapping of wikipedia title and wikipedia ID. 
+
+### New York Times data
+NYT domain data is in ``nyt`` folder.
+
+The data format is:
+
+    {   
+        "context_left": context on the left of the event mention,
+		"mention": event mention,
+		"context_right": context on the right of the event mention,
+		"label": content of the correct title,
+		"label_title": the correct title,
+		"label_id": the correct title ID,
+		"hyperlinks": the hyperlinks of the correct Wikipedia page (only include first 10 hyperlinks. more in the ``t2hyperlinks.json``)
+		"entities": predicted entities in local context
+        "type": verb or other (nominal)
+        "status": hard cases or easy cases
+    }
+
+
+
+
+
 ## Run EveLINK
 
 To run our model, you need to first process all the data by running:
