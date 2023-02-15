@@ -13,7 +13,9 @@ You may need to change torch version based on your CUDA version.
 
 ## Data & models
 
-You can download the data and the model [here].
+```
+wget https://cogcomp.seas.upenn.edu/Data/event_linking/data_and_models.zip
+```
 
 ### Wikipedia data
 Wikipedia domain data is in ``wikipedia`` folder.
